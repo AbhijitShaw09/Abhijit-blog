@@ -14,6 +14,7 @@ import smtplib
 
 MY_EMAIL = "pythoner21@gmail.com"
 MY_PASSWORD = "Pythoner@(21)"
+SEND_MAIL = "johsnow155@gmail.com"
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
@@ -234,7 +235,7 @@ def send_email(name, email, phone, message):
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
         connection.login(MY_EMAIL, MY_PASSWORD)
-        connection.sendmail(from_addr=MY_EMAIL, to_addrs="johsnow155@gmail.com", msg=email_message)
+        connection.sendmail(from_addr=MY_EMAIL, to_addrs=SEND_MAIL, msg=email_message)
 
 
 if __name__ == "__main__":
