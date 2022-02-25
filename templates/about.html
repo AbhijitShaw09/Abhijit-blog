@@ -1,0 +1,31 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/About.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>My motive is to organise the world’s best blogs and make it universally accessible and useful.</p>
+        <p>I designed a software for everyone, emphasizing accessibility, performance, security, and ease of use. I believe a great software should work with minimum set up, so you can focus on sharing your story, product, or services freely.</p>
+        <p>There's this notion that to grow, you have to be ruthless. But we know there's a better way to grow. One where what's good for the bottom line is also good for you. We believe we all can grow with a conscience, and succeed with a soul — and that they can do it with inbound. That's why we've created an ecosystem uniting software, education, and community to help you grow better every day.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
